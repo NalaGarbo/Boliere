@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&family=Noto+Serif&family=Noto+Serif+TC&display=swap');
+
+@font-face {
+  font-family: "High Tide";
+  src: local("High Tide"), url(~/assets/fonts/High_Tide.ttf) format("truetype");
+}
+
+html {
+  font-family: 'Noto Serif TC', serif;
+  font-size: clamp(1rem, 2.5vw, 2rem);
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    min-height: 110vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-image: url('~assets/img/bg_dark.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.title {
+  font-family: 'High Tide';
+  display: block;
+  font-weight: normal;
+  font-size: clamp(6rem, 3vw, 15rem);
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+}
+
+.subtitle {
+  font-family: 'Noto Serif', serif;
+  font-weight: 300;
+  font-size: clamp(2rem, 2.5vw, 5rem);
+  word-spacing: 5px;
+  padding-bottom: 15px;
+  margin-bottom: 1em;
+  text-decoration: underline;
+  text-decoration-color: #005f82;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 3px;
+}
+
+.contains-text {
+  width: 80%;
+  display: inline-block;
+  font-size: clamp(0.8rem, 1vw, 1rem);
+  font-weight: lighter;
+}
